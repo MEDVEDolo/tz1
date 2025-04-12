@@ -61,10 +61,16 @@
     font-size: 16px;
     font-style: italic;
     text-transform: uppercase;
+    transition: color 1s;
 }
 
+.nav__link:hover {
+    color:#38535D;
+}
+
+
 .burger {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 10px;
     background-color: inherit;
@@ -75,6 +81,19 @@
     width: 60px;
     height: 10px;
     background-color: #fff;
+    transition: 1s;
+}
+
+.burger_active .burger__line_top {
+    transform: translateY(20px) rotateZ(-45deg);
+}
+
+.burger_active .burger__line_mid {
+    opacity: 0;
+}
+
+.burger_active .burger__line_bot {
+    transform: translateY(-20px) rotateZ(45deg);
 }
 
 .hero-block {
@@ -91,7 +110,7 @@
 }
 
 .hero-block__content {
-    width: 35%;
+    width: 50%;
     padding: 160px 0 50px 0;
 }
 
@@ -117,7 +136,7 @@
 
 .hero-block__item {
     position: relative;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     padding-left: 58px;
 }
@@ -149,6 +168,11 @@
     font-weight: bold;
     text-transform: uppercase;
     border-radius: 4px;
+    transition: background-color 1s;
+}
+
+.hero-block__link:hover {
+    background-color:#38535D;
 }
 
 .hero-block__img {
@@ -211,6 +235,11 @@
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
+    transition: background-color 1s;
+}
+
+.about__link:hover {
+    background-color:#38535D;
 }
 
 .order {
@@ -241,7 +270,7 @@
     font-weight: normal;
     color: #38535D;
     font-size: 54px;
-    z-index: 3;
+    z-index: 1;
 }
 
 .form {
@@ -262,21 +291,24 @@
     margin-bottom: 26px;
 }
 
-.form__chekbox-container {
-    margin-bottom: 26px;
-    display: flex;
-    align-items: center;
-    gap: 16px;
-}
-
 .form__chekbox {
     width: 24px;
     height: 24px;
 }
 
 .form__check-text {
+    display: flex;
+    align-items: center;
     color: #55565A;
     font-size: 19px;
+    gap: 16px;
+    margin-bottom: 26px;
+    cursor: pointer;
+    transition: color 1s;
+}
+
+.form__check-text:hover {
+    color:#D5C9BE;
 }
 
 .form__btn {
@@ -289,6 +321,12 @@
     text-transform: uppercase;
     cursor: pointer;
     z-index: 1;
+    border: none;
+    transition: background-color 1s;
+}
+
+.form__btn:hover {
+    background-color:#D5C9BE;
 }
 
 .order__img {
@@ -336,15 +374,28 @@
     padding-top: 20px;
 }
 
+path {
+    transition: 1s;
+}
+
 .footer__list {
     display: flex;
     align-items: center;
     gap: 32px;
 }
 
+.footer__svg:hover path {
+    stroke: #38535D;
+}
+
 .footer__privacy {
     color: #D5C9BE;
     font-size: 20px;
+    transition: color 1s;
+}
+
+.footer__privacy:hover {
+    color:#38535D;
 }
 
 .footer__order {
@@ -362,12 +413,23 @@
     font-style: italic;
     text-transform: uppercase;
     border-radius: 4px;
+    transition: background-color 1s;
+}
+
+.footer__btn:hover {
+    background-color:#38535D;
 }
 
 .footer__terms {
     color: #D5C9BE;
     font-size: 20px;
+    transition: color 1s;
 }
+
+.footer__terms:hover {
+    color:#38535D;
+}
+
 
 @media screen and (max-width: 1180px) {
     .container {
@@ -398,6 +460,10 @@
     .container_order {
         background-position: -100px;
     }
+
+    .order__title {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 785px) {
@@ -407,10 +473,42 @@
 
     .header__content {
         width: 100%;
+        position: relative;
     }
 
     .nav_header {
-        display: none;
+        position: absolute;
+        width: 100%;
+        top: -1000px;
+        background-color: #000000e1;
+        transform: translateY(0);
+        transition: 1s;
+    }
+
+    .nav_header_active {
+        display: flex;
+        transform: translateY(900px);
+    }
+
+    .nav__list_header {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 190px 0;
+    }
+
+    .nav__item_header {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .nav__link_header {
+        font-size: 40px;
+    }
+
+    .burger {
+        display: flex;
+        z-index: 2;
     }
 
     .container_hero-block {
@@ -481,6 +579,10 @@
         padding-left: 0;
     }
 
+    .nav__link_header {
+        font-size: 30px;
+    }
+
     .hero-block__title {
         font-size: 50px;
     }
@@ -519,11 +621,15 @@
 
     .about__item::before {
         top: 4%;
-        left: 45%;
+        left: 43%;
         width: 20px;
         height: 17px;
         background-size: contain;
         background-repeat: no-repeat;
+    }
+
+    .container_order {
+        padding: 10px;
     }
 
     .order__content {

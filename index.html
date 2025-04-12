@@ -3,32 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lorem</title>
+    <title>Horizon Homes</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/header-scroll-detector.js" defer></script>
+    <script src="js/burger.js" defer></script>
 </head>
 <body>
     <header class="header">
         <div class="container container_header">
             <div class="header__content">
-                <h1 class="logo">Lorem</h1>
+                <h1 class="logo">Horizon Homes</h1>
                 <nav class="nav nav_header">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">consectetur</a>
+                    <ul class="nav__list nav__list_header">
+                        <li class="nav__item nav__item_header">
+                            <a href="#" class="nav__link nav__link_header">Home Search</a>
                         </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">sit amet</a>
+                        <li class="nav__item nav__item_header">
+                            <a href="#" class="nav__link nav__link_header">About Us</a>
                         </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">eiusmod tempor </a>
+                        <li class="nav__item nav__item_header">
+                            <a href="#" class="nav__link nav__link_header">Contact</a>
                         </li>
                     </ul>
                 </nav>
                 <button class="burger">
-                    <div class="burger__line"></div>
-                    <div class="burger__line"></div>
-                    <div class="burger__line"></div>
+                    <div class="burger__line burger__line_top"></div>
+                    <div class="burger__line burger__line_mid"></div>
+                    <div class="burger__line burger__line_bot"></div>
                 </button>
             </div>
         </div>
@@ -37,12 +38,24 @@
         <section class="hero-block">
             <div class="container container_hero-block">
                 <div class="hero-block__content">
-                    <h2 class="hero-block__title">Lorem ipsum dolor sit amet</h2>
-                    <p class="hero-block__subtitle">sed do eiusmod tempor </p>
+                    <h2 class="hero-block__title">Your Home, Our Horizon</h2>
+                    <p class="hero-block__subtitle">Discover the perfect property with ease and expertise.</p>
                     <ul class="hero-block__list">
-                        <li class="hero-block__item">do <span class="hero-block__special">$10 000</span> consectetur elit</li>
-                        <li class="hero-block__item"><span class="hero-block__special hero-block__special_first">30%</span> sed do eiusmod tempor</li>
-                        <li class="hero-block__item">do <span class="hero-block__special">17%</span> adipiscing elit sed do</li>
+                        <li class="hero-block__item">
+                            <span>
+                                Every purchase includes a <span class="hero-block__special">$10 000</span> package for smart home technology installation.
+                            </span>
+                        </li>
+                        <li class="hero-block__item">
+                            <span>
+                                Every purchase includes <span class="hero-block__special">30%</span> more coverage in our premium property management service for the first year
+                            </span>
+                        </li>
+                        <li class="hero-block__item">
+                            <span>
+                                Every purchase includes a home warranty with <span class="hero-block__special">17%</span>more coverage for repairs and systems.
+                            </span>
+                        </li>
                     </ul>
                     <a href="#order" class="hero-block__link">Order</a>
                 </div>
@@ -53,10 +66,10 @@
             <img src="img/about-left.png" alt="" class="about__img">
             <div class="about__content">
                 <ul class="about__list">
-                    <li class="about__item">Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor </li>
-                    <li class="about__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </li>
-                    <li class="about__item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </li>
-                    <li class="about__item">Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor </li>
+                    <li class="about__item">Our team brings years of experience to guide you through every step of your real estate journey.</li>
+                    <li class="about__item">We prioritize your needs, offering personalized solutions for buying, selling, or investing.</li>
+                    <li class="about__item">We build strong relationships, helping clients feel at home in their new spaces.</li>
+                    <li class="about__item">Every purchase includes a comprehensive post-sale support plan for a smooth transition.</li>
                 </ul>
                 <a href="#order" class="about__link">Order</a>
             </div>
@@ -65,14 +78,11 @@
         <section class="order" id="order">
             <div class="container container_order">
                 <div class="order__content">
-                    <h3 class="order__title">Consectetur sed do eiusmod </h3>
+                    <h3 class="order__title">Get Your Dream Home Started Today!</h3>
                     <form action="" class="form">
                         <input type="text" class="form__input" placeholder="Name" name="name">
                         <input type="text" class="form__input" placeholder="E-mail" name="email">
-                        <div class="form__chekbox-container">
-                            <input type="checkbox" class="form__chekbox">
-                            <span class="form__check-text">I accept Privacy policy</span>
-                        </div>
+                        <label class="form__check-text"><input type="checkbox" class="form__chekbox"> I accept Privacy policy</label>
                         <button type="submit" class="form__btn">Submit Form</button>
                     </form>
                 </div>
@@ -84,51 +94,105 @@
         <nav class="nav nav_footer">
             <ul class="nav__list nav__list_footer">
                 <li class="nav__item">
-                    <a href="#" class="nav__link">consectetur</a>
+                    <a href="#" class="nav__link">Home Search</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#" class="nav__link">Adipiscing</a>
+                    <a href="#" class="nav__link">About Us</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#" class="nav__link">tempor </a>
+                    <a href="#" class="nav__link">Contact</a>
                 </li>
             </ul>
         </nav>
         <div class="container container_footer">
             <div class="footer__copyright">
-                <h1 class="logo logo_footer">Lorem</h1>
+                <h1 class="logo logo_footer">Horizon Homes</h1>
                 <p class="footer__copy">© 2024, Copyright.</p>
             </div>
             <div class="footer__links">
                 <ul class="footer__list">
                     <li class="footer__item">
                         <a href="#" class="footer__link">
-                            <img src="img/icon-inst.svg" alt="" class="footer__icon">
+                            <svg class="footer__svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_65_1272)">
+                                <path d="M21.332 5.33203H10.6654C7.71985 5.33203 5.33203 7.71985 5.33203 10.6654V21.332C5.33203 24.2775 7.71985 26.6654 10.6654 26.6654H21.332C24.2775 26.6654 26.6654 24.2775 26.6654 21.332V10.6654C26.6654 7.71985 24.2775 5.33203 21.332 5.33203Z" stroke="#D5C9BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 20C18.2091 20 20 18.2091 20 16C20 13.7909 18.2091 12 16 12C13.7909 12 12 13.7909 12 16C12 18.2091 13.7909 20 16 20Z" stroke="#D5C9BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22 10V10.001" stroke="#D5C9BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_65_1272">
+                                <rect width="32" height="32" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>                                
                         </a>
                     </li>
                     <li class="footer__item">
                         <a href="#" class="footer__link">
-                            <img src="img/icon-tiktok.svg" alt="" class="footer__icon">
+                            <svg class="footer__svg" width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.0013 11.9987C5.94647 11.9987 4.91533 12.3115 4.03826 12.8975C3.1612 13.4836 2.47761 14.3165 2.07395 15.2911C1.67028 16.2656 1.56466 17.3379 1.77045 18.3725C1.97624 19.4071 2.48419 20.3574 3.23007 21.1033C3.97595 21.8491 4.92626 22.3571 5.96082 22.5629C6.99539 22.7687 8.06774 22.6631 9.04228 22.2594C10.0168 21.8557 10.8498 21.1721 11.4358 20.2951C12.0218 19.418 12.3346 18.3869 12.3346 17.332V1.33203C12.3346 3.10014 13.037 4.79583 14.2873 6.04608C15.5375 7.29632 17.2332 7.9987 19.0013 7.9987" stroke="#D5C9BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
                         </a>
                         </li>
                     <li class="footer__item">
                         <a href="#" class="footer__link">
-                            <img src="img/icon-im.svg" alt="" class="footer__icon">
+                            <svg class="footer__svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_65_1274)">
+                                <path d="M23.9987 5.33203H7.9987C6.52594 5.33203 5.33203 6.52594 5.33203 7.9987V23.9987C5.33203 25.4715 6.52594 26.6654 7.9987 26.6654H23.9987C25.4715 26.6654 26.6654 25.4715 26.6654 23.9987V7.9987C26.6654 6.52594 25.4715 5.33203 23.9987 5.33203Z" stroke="#D5C9BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.668 14.668V21.3346" stroke="#D5C9BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.668 10.668V10.6813" stroke="#D5C9BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 21.3346V14.668" stroke="#D5C9BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21.3333 21.3346V17.3346C21.3333 16.6274 21.0524 15.9491 20.5523 15.449C20.0522 14.9489 19.3739 14.668 18.6667 14.668C17.9594 14.668 17.2811 14.9489 16.781 15.449C16.281 15.9491 16 16.6274 16 17.3346" stroke="#D5C9BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_65_1274">
+                                <rect width="32" height="32" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg> 
                         </a>
                     </li>
                     <li class="footer__item">
                         <a href="#" class="footer__link">
-                            <img src="img/icon-fb.svg" alt="" class="footer__icon">
+                            <svg class="footer__svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_65_1275)">
+                                <path d="M9.33203 13.3333V18.6667H13.332V28H18.6654V18.6667H22.6654L23.9987 13.3333H18.6654V10.6667C18.6654 10.313 18.8058 9.97391 19.0559 9.72386C19.3059 9.47381 19.6451 9.33333 19.9987 9.33333H23.9987V4H19.9987C18.2306 4 16.5349 4.70238 15.2847 5.95262C14.0344 7.20286 13.332 8.89856 13.332 10.6667V13.3333H9.33203Z" stroke="#D5C9BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_65_1275">
+                                <rect width="32" height="32" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>                                
                         </a>
                     </li>
                     <li class="footer__item">
                         <a href="#" class="footer__link">
-                            <img src="img/icon-tg.svg" alt="" class="footer__icon">
+                            <svg class="footer__svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_65_1276)">
+                                <path d="M20 13.332L14.6667 18.6654L22.6667 26.6654L28 5.33203L4 14.6654L9.33333 17.332L12 25.332L16 19.9987" stroke="#D5C9BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_65_1276">
+                                <rect width="32" height="32" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>                                
                         </a>
                     </li>
                     <li class="footer__item">
                         <a href="#" class="footer__link">
-                            <img src="img/icon-yt.svg" alt="" class="footer__icon">
+                            <svg class="footer__svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_65_1277)">
+                                <path d="M22.6667 6.66797H9.33333C6.38781 6.66797 4 9.05578 4 12.0013V20.0013C4 22.9468 6.38781 25.3346 9.33333 25.3346H22.6667C25.6122 25.3346 28 22.9468 28 20.0013V12.0013C28 9.05578 25.6122 6.66797 22.6667 6.66797Z" stroke="#D5C9BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13.332 12L19.9987 16L13.332 20V12Z" stroke="#D5C9BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_65_1277">
+                                <rect width="32" height="32" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>                                
                         </a>
                     </li>
                 </ul>

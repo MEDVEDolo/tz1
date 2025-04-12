@@ -10,6 +10,4 @@ function scrollDetected() {
     }
 }
 
-document.addEventListener('scroll', function(event) {
-    scrollDetected()
-  })
+document.addEventListener('scroll', scrollDetected) 
